@@ -4,7 +4,7 @@ title: '#4471 · two date bugs, not one'
 owner: Kamil Dawid
 status: closed
 reviewed: 2026-10-28
-signature: Kamil Dawid
+signature: KamilDawid
 ---
 
 <script>
@@ -12,7 +12,7 @@ signature: Kamil Dawid
   import QueueTimeline from '#lib/kb/QueueTimeline.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  const signature = 'Kamil Dawid';
+  const signature = 'KamilDawid';
 </script>
 
 The desk merged every date-wrong report into #4471 and marked it known: one parser, one fix.
