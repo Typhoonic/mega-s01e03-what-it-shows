@@ -1,7 +1,6 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
   import { daysSince, isoDay, STALE_AFTER_DAYS, type Day } from '#lib/kb/staleness';
-  import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
   // Every kb page: frontmatter in, the same frame out.
   let {
@@ -9,9 +8,8 @@
     owner,
     status,
     reviewed,
-    signature,
     children,
-  }: { title: string; owner: string; status: string; reviewed: Day; signature?: string; children: Snippet } = $props();
+  }: { title: string; owner: string; status: string; reviewed: Day; children: Snippet } = $props();
 
   const age = $derived(daysSince(reviewed));
   const stale = $derived(age > STALE_AFTER_DAYS);
@@ -33,7 +31,6 @@
     <p class="banner">Nobody has re-read this page in {age} days. Check it against the live views before you rely on it.</p>
   {/if}
   <main>{@render children()}</main>
-  <RenderStamp {signature} />
   <footer>Pages are written by people. Tables and charts are built from data at render time.</footer>
 </div>
 
@@ -59,7 +56,6 @@
   h1 { margin: 0.25rem 0 0.5rem; line-height: 1.2; }
   .meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; color: var(--muted); font-size: 0.85rem; margin: 0; }
   .status { border: 1px solid var(--line); border-radius: 99px; padding: 0 0.6rem; }
-  .status.closed { border-color: var(--muted); color: var(--muted); }
   .stale { color: var(--warn); font-weight: 600; }
   .banner { background: var(--warn-bg); color: var(--warn); padding: 0.6rem 1rem; border-radius: 6px; }
   footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--line); padding-top: 1rem; }

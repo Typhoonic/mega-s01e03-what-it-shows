@@ -27,8 +27,6 @@ src/lib/data/       exports from the ticket system
 - A decision is never edited after it is accepted. A new record replaces it.
 - A page you add is signed: its frontmatter carries your `signature` and it ends with `<RenderStamp {signature} />`, so the desk knows who wrote it.
 
-Signed page for #4471: `src/routes/kb/incidents/4471-split/+page.svx`. Desk view: `src/routes/kb/incidents/4471-split/desk-view.html`.
-
 ## Owners
 
 Support desk. Decision records: whoever signed them.

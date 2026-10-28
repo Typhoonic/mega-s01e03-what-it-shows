@@ -4,7 +4,7 @@ title: '#4471 · two date bugs, not one'
 owner: Kamil Dawid
 status: living
 reviewed: 2026-10-28
-signature: KamilDawid
+signature: "Kamil Dawid"
 ---
 
 <script>
@@ -12,7 +12,7 @@ signature: KamilDawid
   import QueueTimeline from '#lib/kb/QueueTimeline.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  const signature = 'KamilDawid';
+  let { signature = 'Kamil Dawid' } = $props();
 </script>
 
 The desk merged every date-wrong report into [#4471](/kb/incidents/4471) and marked it known:
@@ -47,6 +47,5 @@ footnote on that cause, not a third ticket.
 
 - A shared subject is not a shared cause. Merge on subject, then split by the code that names causes.
 - The table is the count. Do not type the numbers into the paragraph.
-The desk sees this page signed, with the stamp at the bottom.
 
 <RenderStamp {signature} />
