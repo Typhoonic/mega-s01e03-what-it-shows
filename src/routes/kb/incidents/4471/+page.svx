@@ -2,8 +2,8 @@
 layout: runbook
 title: '#4471 · dates parse mm/dd in eu locales'
 owner: support desk
-status: known
-reviewed: 2026-09-30
+status: closed
+reviewed: 2026-10-28
 ---
 
 <script>
@@ -22,7 +22,8 @@ first. The fix is queued.
 Known. One issue, one fix queued.
 </Callout>
 
-Re-read 28 Oct 2026: two causes, not one. See
+Re-read 28 Oct 2026: two causes, not one. Engineering closed this ticket on 5 Oct
+(parser fixed, hint won't-fix). See
 [two date bugs, not one](/kb/incidents/4471-split).
 
 ## What was merged

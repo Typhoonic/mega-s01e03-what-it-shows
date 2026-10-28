@@ -57,6 +57,7 @@
   h1 { margin: 0.25rem 0 0.5rem; line-height: 1.2; }
   .meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; color: var(--muted); font-size: 0.85rem; margin: 0; }
   .status { border: 1px solid var(--line); border-radius: 99px; padding: 0 0.6rem; }
+  .status.closed { border-color: var(--muted); color: var(--muted); }
   .stale { color: var(--warn); font-weight: 600; }
   .banner { background: var(--warn-bg); color: var(--warn); padding: 0.6rem 1rem; border-radius: 6px; }
   footer { margin-top: 3rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--line); padding-top: 1rem; }

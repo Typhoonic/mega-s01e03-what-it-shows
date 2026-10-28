@@ -38,7 +38,7 @@
       <h1>#4471 · two date bugs, not one</h1>
       <p class="meta">
         <span>owner <b>Kamil Dawid</b></span>
-        <span class="status living">living</span>
+        <span class="status closed">closed</span>
         <span>reviewed 2026-10-28 · 0 days ago</span>
       </p>
     </header>
@@ -54,9 +54,10 @@
       </aside>
 
       <h2>Tickets</h2>
+      <p>Engineering closed #4471 on 5 Oct. Our tickets follow that:</p>
       <ul>
-        <li>parser → <a href="https://github.com/Typhoonic/mega-s01e03-what-it-shows/issues/1">Typhoonic/mega-s01e03-what-it-shows#1</a> — shared parser reads month first; day-first tenants flip day and month.</li>
-        <li>hint → <a href="https://github.com/Typhoonic/mega-s01e03-what-it-shows/issues/2">Typhoonic/mega-s01e03-what-it-shows#2</a> — booking-v3 prints <code>MM/DD/YYYY</code>, then reads the field day-first.</li>
+        <li>parser → <a href="https://github.com/Typhoonic/mega-s01e03-what-it-shows/issues/1">Typhoonic/mega-s01e03-what-it-shows#1</a> — <strong>fixed.</strong> <code>fix(dates): parse dd/mm for eu locales</code></li>
+        <li>hint → <a href="https://github.com/Typhoonic/mega-s01e03-what-it-shows/issues/2">Typhoonic/mega-s01e03-what-it-shows#2</a> — <strong>won't fix.</strong> booking-v3 form retired.</li>
       </ul>
       <p>Five reports the desk read as a one-day move still classify as <code>parser</code> by tenant. They stay a
       footnote on that cause, not a third ticket.</p>
