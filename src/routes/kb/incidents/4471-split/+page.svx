@@ -4,7 +4,7 @@ title: '#4471 · two date bugs, not one'
 owner: Kamil Dawid
 status: living
 reviewed: 2026-10-28
-signature: "Kamil Dawid"
+signature: "v1.eyJzdWIiOiIzMzY5IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMDU0MjcsImV4cCI6MTc5MzI5MTgyN30.mbDPhPLZb9kM9Agwnl5QLNOAFMyOe2FVIUSFCbeWa5M"
 ---
 
 <script>
@@ -12,7 +12,7 @@ signature: "Kamil Dawid"
   import QueueTimeline from '#lib/kb/QueueTimeline.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
-  let { signature = 'Kamil Dawid' } = $props();
+  let { signature = "v1.eyJzdWIiOiIzMzY5IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMyMDU0MjcsImV4cCI6MTc5MzI5MTgyN30.mbDPhPLZb9kM9Agwnl5QLNOAFMyOe2FVIUSFCbeWa5M" } = $props();
 </script>
 
 The desk merged every date-wrong report into [#4471](/kb/incidents/4471) and marked it known:
