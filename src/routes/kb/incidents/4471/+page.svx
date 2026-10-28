@@ -2,7 +2,7 @@
 layout: runbook
 title: '#4471 · two date bugs, not one'
 owner: Kamil Dawid
-status: closed
+status: living
 reviewed: 2026-10-28
 signature: KamilDawid
 ---

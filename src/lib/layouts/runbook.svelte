@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
   import { daysSince, isoDay, STALE_AFTER_DAYS, type Day } from '#lib/kb/staleness';
+  import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
   // Every kb page: frontmatter in, the same frame out.
   let {
@@ -8,7 +9,7 @@
     owner,
     status,
     reviewed,
-    signature: _signature,
+    signature,
     children,
   }: { title: string; owner: string; status: string; reviewed: Day; signature?: string; children: Snippet } = $props();
 
@@ -32,6 +33,7 @@
     <p class="banner">Nobody has re-read this page in {age} days. Check it against the live views before you rely on it.</p>
   {/if}
   <main>{@render children()}</main>
+  <RenderStamp {signature} />
   <footer>Pages are written by people. Tables and charts are built from data at render time.</footer>
 </div>
 
